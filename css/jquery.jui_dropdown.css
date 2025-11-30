@@ -1,0 +1,9 @@
+.launcherContainerClass {
+	padding-bottom: 1px;
+}
+.launcherClass {
+	padding: 2px;
+}
+.menuClass {
+	width: 150px; margin-top: 3px !important; position: absolute;
+}

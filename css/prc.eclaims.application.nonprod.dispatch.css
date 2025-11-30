@@ -1,0 +1,249 @@
+/*!
+ * PRC Custom CSS
+ *
+ * Copyright 2012 Plymouth Rock Group
+ */
+ 
+.div-right {
+    float: right;
+}
+.div-left {
+    float: left;
+}
+.span-error-left .ui-icon .ui-icon-alert {
+    margin-right: 0.3em; float: right;
+}
+#ajaxSpinnerImage {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* the image is 100x100, so we use negative margins of 1/2 that size to center it*/
+    margin: -50px 0 0 -50px;
+    z-index: 3000;
+}
+#error-message {                 
+    display: none;
+    float: right;
+}
+
+
+/* AUTOCOMPLETE EXTENDS */
+.ui-autocomplete {
+    position: absolute; 
+    cursor: default;
+    /*z-index: 15001 !important;*/
+    max-height: 250px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* add padding to account for vertical scrollbar */
+/*    padding-right: 20px;*/
+}
+.ui-autocomplete-loading { 
+    background: url('images/spinner.gif') center no-repeat; 
+}
+
+/* JQGRID CSS OVERRIDES */
+.prc-jqgrid-alt-row{
+    background: #E5EFFB; 
+    font-weight: normal; 	
+}
+.ui-jqgrid tr.ui-row-ltr td {
+    border-color: #EBF5FF;
+}
+table.EditTable > tbody > tr.FormData > td.DataTD > input[type="text"] {
+    width: 175px !important;
+}
+.prc-jqgrid-textbox-extrawide {
+    width: 350px !important;
+}
+table.EditTable > tbody > tr.FormData > td.DataTD > input[type="select"] {
+    width: 125px !important;
+}
+table.EditTable > tbody > tr.FormData > td.DataTD > input[type="textarea"] {
+    width: 175px !important;
+}
+table.EditTable > tbody > tr.FormData > td.DataTD > input
+{
+    width: 75px !important;
+}
+
+
+.ui-jqgrid .ui-jqgrid-bdiv {
+  position: relative; 
+  margin: 0em; 
+  padding: 0; 
+  /*overflow: auto;*/ 
+  overflow-x: hidden; 
+  overflow-y: auto; 
+  text-align: center;
+}
+
+
+/* DATEPICKER CSS OVERRIDES */
+.ui-datepicker {
+    z-index: 20000 !important;
+}
+
+/* TIMEPICKER CSS */
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+/* MULTISELECT CSS */
+.ui-multiselect { border: solid 1px; font-size: 0.8em; }
+.ui-multiselect ul { -moz-user-select: none; }
+.ui-multiselect li { margin: 0; padding: 0; cursor: default; line-height: 20px; height: 20px; font-size: 11px; list-style: none; }
+.ui-multiselect li a { color: #999; text-decoration: none; padding: 0; display: block; float: left; cursor: pointer;}
+.ui-multiselect li.ui-draggable-dragging { padding-left: 10px; }
+
+.ui-multiselect div.selected { position: relative; padding: 0; margin: 0; border: 0; float:left; }
+.ui-multiselect ul.selected { position: relative; padding: 0; overflow: auto; overflow-x: hidden; background: #fff; margin: 0; list-style: none; border: 0; position: relative; width: 100%; }
+.ui-multiselect ul.selected li { }
+
+.ui-multiselect div.available { position: relative; padding: 0; margin: 0; border: 0; float:left; border-left: 1px solid; }
+.ui-multiselect ul.available { position: relative; padding: 0; overflow: auto; overflow-x: hidden; background: #fff; margin: 0; list-style: none; border: 0; width: 100%; }
+.ui-multiselect ul.available li { padding-left: 10px; }
+ 
+.ui-multiselect .ui-state-default { border: none; margin-bottom: 1px; position: relative; padding-left: 20px;}
+.ui-multiselect .ui-state-hover { border: none; }
+.ui-multiselect .ui-widget-header {border: none; font-size: 11px; margin-bottom: 1px;}
+ 
+.ui-multiselect .add-all { float: right; padding: 7px;}
+.ui-multiselect .remove-all { float: right; padding: 7px;}
+.ui-multiselect .search { float: left; padding: 4px;}
+.ui-multiselect .count { float: left; padding: 7px;}
+
+.ui-multiselect li span.ui-icon-arrowthick-2-n-s { position: absolute; left: 2px; }
+.ui-multiselect li a.action { position: absolute; right: 2px; top: 2px; }
+ 
+.ui-multiselect input.search { height: 14px; padding: 1px; opacity: 0.5; margin: 4px; width: 100px; }
+
+
+/* 5/8/13 RWH - Added for page formatting */
+/*==================================*/
+/* Custom Button Codes              */
+/*==================================*/
+
+/*.btn-edit{
+    width: 75px;
+    vertical-align:middle;
+}
+
+.btn-save{
+    width: 75px;
+    vertical-align:middle;
+}
+
+.btn-cancel{
+    width: 75px;
+    vertical-align:middle;
+}
+
+.btn-applyFilter{
+    width: 120px;
+    vertical-align:middle;
+}
+
+.btn-clearFilter{
+    width: 120px;
+    vertical-align:middle;
+}
+
+.btn-advancedFilter{
+    width: 125px;
+    vertical-align:middle;
+}
+
+.btn-newClaim{
+    width: 175px;
+    vertical-align:middle;
+}
+
+.btn-assignAppraiser{
+    width: 140px;
+    vertical-align:middle;
+}
+
+.btn-searchAppraiser{
+    width: 110px;
+    vertical-align:middle;
+}
+
+.btn-metQuotaAppraiser{
+    width: 110px;
+    vertical-align:middle;
+}
+
+.btn-newDispatch{
+    width: 125px;
+    vertical-align:middle;
+}
+
+.btn-newInstruction{
+    width: 135px;
+    vertical-align:middle;
+}
+
+.btn-webCal{
+    width: 100px;
+    vertical-align:middle;
+}
+
+.btn-printSelected{
+    width: 125px;
+    vertical-align:middle;
+}
+
+.btn-printAll{
+    width: 100px;
+    vertical-align:middle;
+}*/
+
+/* Grid Buttons */
+.ui-pg-button.ui-corner-all {
+	border: 1px solid #4B83B6 !important;
+}
+/* Handles the grid form edit elements, non read-only */
+.FormElement.ui-widget-content.ui-corner-all:not(.CaptionTD) {
+    background-color: white
+}
+
+/* To counter bootstrap css issues with the tables' */
+table {
+    border-collapse: separate; 
+}
+/* To counter bootstrap css issues with anything that accepts width and height */
+* {
+    box-sizing: content-box;
+    line-height: normal;
+}
+
+/* for any modal dialog, overlay */
+.ui-widget-overlay { background: #aaaaaa url(about:none) 50% 50% repeat-x; opacity: .50;filter:Alpha(Opacity=50) !important; }
+
+
+/* for jui drop-down menus*/
+.launcherContainerClass {
+    padding-bottom: 1px;
+}
+.launcherClass {
+    padding: 0px;
+}
+.menuClass {
+    width: 150px; margin-top: 3px !important; position: absolute;
+}
+ 
+.menu-container {
+  display: inline-block;
+}
+ 
+.menu {
+  position: absolute;
+  padding: 7px !important;
+  z-index: 100;
+}
